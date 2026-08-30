@@ -6,7 +6,7 @@
 #    By: kong <kong@student.42singapore.sg>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/23 14:18:51 by kong              #+#    #+#              #
-#    Updated: 2026/08/30 16:12:04 by kong             ###   ########.fr        #
+#    Updated: 2026/08/30 20:01:51 by kong             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ SRC_FILES := $(shell find $(SRC_DIR) -type f -name '*.cpp')
 OBJ_FILES := $(patsubst $(SRC_DIR)/%.cpp, $(BUILD_DIR)/%.o, $(SRC_FILES))
 
 # Executable
-NAME = scavtrap
+NAME = fragtrap
 
 # Header Files
 # INCLUDES = -I${HEADER_DIR}
