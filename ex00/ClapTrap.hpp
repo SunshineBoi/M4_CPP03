@@ -6,7 +6,7 @@
 /*   By: kong <kong@student.42singapore.sg>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/30 13:12:50 by kong              #+#    #+#             */
-/*   Updated: 2026/08/30 14:00:40 by kong             ###   ########.fr       */
+/*   Updated: 2026/08/30 15:41:38 by kong             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ public:
 	ClapTrap& operator=(const ClapTrap& other);
 	~ClapTrap();
 
-	void attack(const std::string& target);
-	void takeDamage(unsigned int amount);
-	void beRepaired(unsigned int amount);
+	void	attack(const std::string& target);
+	void	takeDamage(unsigned int amount);
+	void	beRepaired(unsigned int amount);
 };
 
 #endif
