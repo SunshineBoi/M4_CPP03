@@ -6,7 +6,7 @@
 /*   By: kong <kong@student.42singapore.sg>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/30 15:00:02 by kong              #+#    #+#             */
-/*   Updated: 2026/08/30 16:18:07 by kong             ###   ########.fr       */
+/*   Updated: 2026/08/30 21:14:21 by kong             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ ScavTrap::ScavTrap() : ClapTrap()
 
 ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name)
 {
+	// derived class's initializer list cannot target inherited members, it has to go to the body
 	_hp = 100;
 	_ep = 50;
 	_dmg = 20;
