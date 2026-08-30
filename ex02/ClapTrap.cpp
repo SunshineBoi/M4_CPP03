@@ -6,7 +6,7 @@
 /*   By: kong <kong@student.42singapore.sg>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/30 13:16:53 by kong              #+#    #+#             */
-/*   Updated: 2026/08/30 16:13:45 by kong             ###   ########.fr       */
+/*   Updated: 2026/08/30 21:03:05 by kong             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ ClapTrap::ClapTrap()
 	: _name("Default"), _hp(10), _ep(10), _dmg(0)
 {
 	std::cout
-		<< "Claptrap Default constructor called"
+		<< "ClapTrap Default constructor called"
 		<< std::endl;
 }
 
@@ -24,7 +24,7 @@ ClapTrap::ClapTrap(const std::string &name)
 	: _name(name), _hp(10), _ep(10), _dmg(0)
 {
 	std::cout
-		<< "Claptrap Constructor called"
+		<< "ClapTrap Constructor called"
 		<< std::endl;
 }
 
@@ -32,7 +32,7 @@ ClapTrap::ClapTrap(const ClapTrap& other)
 	: _name(other._name), _hp(other._hp), _ep(other._ep), _dmg(other._dmg)
 {
 	std::cout
-		<< "Claptrap Copy Constructor called"
+		<< "ClapTrap Copy Constructor called"
 		<< std::endl;
 }
 
@@ -46,7 +46,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other)
 		_dmg = other._dmg;
 	}
 	std::cout
-		<< "Claptrap Copy assignment operator called"
+		<< "ClapTrap Copy assignment operator called"
 		<< std::endl;
 	return (*this);
 }
