@@ -12,54 +12,6 @@
 
 int main()
 {
-	std::cout << "=== ClapTrap ===" << std::endl;
-
-	std::cout << "\n--- default constructor ---" << std::endl;
-	{
-		ClapTrap def;
-		def.attack("dummy");
-	}
-
-	std::cout << "\n--- normal attack / repair ---" << std::endl;
-	{
-		ClapTrap bob("Bob");
-		bob.attack("enemy");
-		bob.beRepaired(5);
-	}
-
-	std::cout << "\n--- takeDamage prints the right amount ---" << std::endl;
-	{
-		ClapTrap alice("Alice");
-		alice.takeDamage(4);
-	}
-
-	std::cout << "\n--- energy points run out ---" << std::endl;
-	{
-		ClapTrap carl("Carl");
-		for (int i = 0; i < 11; i++)
-			carl.attack("target");
-	}
-
-	std::cout << "\n--- hit points run out (KO) ---" << std::endl;
-	{
-		ClapTrap dave("Dave");
-		dave.takeDamage(6);
-		dave.takeDamage(6);
-		dave.attack("enemy");
-		dave.beRepaired(5);
-	}
-
-	std::cout << "\n--- copy constructor / assignment ---" << std::endl;
-	{
-		ClapTrap eve("Eve");
-		ClapTrap eveCopy(eve);
-		eveCopy.attack("target");
-
-		ClapTrap frank("Frank");
-		frank = eve;
-		frank.attack("target");
-	}
-
 	std::cout << "\n=== ScavTrap ===" << std::endl;
 
 	std::cout << "\n--- construction/destruction chaining ---" << std::endl;
