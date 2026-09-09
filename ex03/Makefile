@@ -6,7 +6,7 @@
 #    By: kong <kong@student.42singapore.sg>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/23 14:18:51 by kong              #+#    #+#              #
-#    Updated: 2026/08/30 20:01:56 by kong             ###   ########.fr        #
+#    Updated: 2026/09/09 20:29:02 by kong             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ BUILD_DIR = build
 HEADER_DIR = includes
 
 # Source Files
-SRC_FILES := $(addprefix $(SRC_DIR)/, ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamonTrap.cpp main.cpp)
+SRC_FILES := $(addprefix $(SRC_DIR)/, ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp main.cpp)
 OBJ_FILES := $(patsubst $(SRC_DIR)/%.cpp, $(BUILD_DIR)/%.o, $(SRC_FILES))
 
 # Executable
